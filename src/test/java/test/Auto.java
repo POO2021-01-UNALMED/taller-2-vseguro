@@ -26,9 +26,9 @@ public class Auto {
 	
 	String verificarIntegridad() {
 		int conta=0;
-		for (int i = 0; i < registroAsiento.length;i++) {
+		for (int i = 0; i < cantidadCreados;i++) {
 			if ((registroAsiento!=null) && (registroMotor!=null) && (registroAuto!=null)){
-				if ((registroAsiento[i].equals(registroMotor[i]))||(registroAsiento[i].equals(registroAuto[i]))||
+				if ((registroAsiento[i].equals(registroMotor[i]))&&(registroAsiento[i].equals(registroAuto[i]))&&
 						(registroAuto[i].equals(registroMotor[i]))){
 					conta=0;
 				} else {
@@ -38,10 +38,9 @@ public class Auto {
 			
 			}
 		if (conta==0) {
-			return "Auto origibal";
+			return "Auto original";
 		} else {
 			return "Las piezas no son originales";
 		}
 	}
-	
 }

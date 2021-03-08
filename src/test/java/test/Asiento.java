@@ -4,7 +4,7 @@ public class Asiento {
 	String color;
 	int precio;
 	int registro;
-	//Asiento registroAsiento[];
+	
 	
 	void cambiarColor(String color) {
 		
